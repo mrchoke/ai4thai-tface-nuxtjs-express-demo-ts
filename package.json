@@ -1,0 +1,41 @@
+{
+  "name": "ai4thai-tface-nuxtjs-express-demo-ts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:express": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start:express": "cross-env NODE_ENV=production node server/index.js",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/composition-api": "^0.12.5",
+    "blueimp-load-image": "^5.14.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "nuxt": "^2.14.5"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.5",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@types/blueimp-load-image": "^2.23.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.1"
+  }
+}
