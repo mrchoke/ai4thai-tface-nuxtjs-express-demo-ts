@@ -30,4 +30,44 @@ $ yarn start:express
 $ yarn generate
 ```
 
+## Docker Compose
+
+### Build and Up
+
+```bash
+docker-compose up -d
+```
+
+### Rebuild and Up
+
+```bash
+docker-compose up --build -d
+```
+
+### Down
+
+```bash
+docker-compose down
+```
+
+## Docker with out Compose
+
+### Build
+```bash
+docker build -t yourname/tface-nuxt:1 .
+```
+
+### Run
+
+```bash
+docker run -itd -p3000:3000 -name tface yourname/tface-nuxt:1
+```
+
+### Down
+
+```bash
+docker stop tface
+docker rm  tface
+```
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
