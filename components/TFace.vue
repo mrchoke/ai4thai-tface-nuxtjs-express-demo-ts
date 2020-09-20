@@ -18,7 +18,7 @@
             ref="addFile"
             type="file"
             accept="image/jpeg,image/png"
-            @change="tface.init($event)"
+            @change="tface.init($event.target.files)"
           />
 
           <v-row>

@@ -1,7 +1,7 @@
 import { reactive } from '@nuxtjs/composition-api'
 import loadImage, { MetaData, LoadImageOptions } from 'blueimp-load-image'
 import axios from 'axios'
-import type { HTMLInputEvent, Exifs, Search, Boxes } from '~/types/tface'
+import type { Exifs, Search, Boxes } from '~/types/tface'
 
 class TFaceClass {
   img: string
@@ -27,13 +27,10 @@ class TFaceClass {
     )
   }
 
-  init(e: HTMLInputEvent): void {
+  init(files: FileList & File): void {
     this.img = ''
     this.output = ''
-    const target = e.target as HTMLInputElement
-
-    const file = target.files ? target.files[0] : target.files
-
+    const file = files[0] ? files[0] : files
     const options: LoadImageOptions = {
       canvas: true,
       maxHeight: 640,
