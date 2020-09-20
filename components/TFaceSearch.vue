@@ -61,7 +61,7 @@
             </v-col>
             <v-col v-if="items" cols="12" sm="9">
               <v-row align-content="start" justify="space-around">
-                <v-col v-for="item in items" :key="item.id" cols="6" sm="3">
+                <v-col v-for="item in items" :key="item.id" cols="6" sm="2">
                   <v-card
                     :style="`border-width:1px;border-color: ${tface.color(
                       i
